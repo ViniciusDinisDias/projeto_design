@@ -1,0 +1,103 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #d7996b, #f4d2a0);
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+}
+
+/* Seção de regras */
+.rules-section {
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #ffdead, #ffd2a1, #ffc39f, #ffb3a6 );
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.rules-section h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.rules-section h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.rules h3 {
+    font-size: 24px;
+    color: #444;
+    margin-top: 20px;
+}
+
+.rules ul {
+    list-style: circle;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.rules ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Estilo de responsividade */
+@media (max-width: 768px) {
+    .rules-section {
+        padding: 20px;
+    }
+
+    .rules-section h1 {
+        font-size: 28px;
+    }
+
+    .rules-section h2 {
+        font-size: 18px;
+    }
+
+    .rules ul li {
+        font-size: 14px;
+    }
+}

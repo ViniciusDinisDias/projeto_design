@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas do Jogo</title>
+    <style>
+        /* Estilização Geral */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #141E30, #243B55);
+            color: #fff;
+        }
+
+        /* Cabeçalho */
+        header {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(to right, #ff512f, #dd2476);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        header h2 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            color: #ffdab9;
+            font-style: italic;
+        }
+
+        /* Container das Cartas */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Cartas */
+        .card {
+            width: calc(50% - 20px);
+            background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.5);
+        }
+        .card img {
+            width: 100%;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .card p {
+            font-size: 1.2rem;
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Efeitos de Brilho */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cartas do Jogo</h1>
+        <h2>Aqui você verá as cartas e explorará suas habilidades únicas!</h2>
+    </header>
+    <div class="container">
+        <!-- Cartas (Substitua os exemplos com suas cartas reais) -->
+        <div class="card">
+            <img src="Image/cardss.png" alt="Carta 1">
+            <p>Carta 1</p>
+        </div>
+        <div class="card">
+            <img src="Image/AdaLove_MATH.jpg" alt="Carta 2">
+            <p>Carta 2</p>
+        </div>
+        <div class="card">
+            <img src="Image/Albert Luthuli.png" alt="Carta 3">
+            <p>Carta 3</p>
+        </div>
+        <div class="card">
+            <img src="Image/Alexandre_MATH.jpg" alt="Carta 4">
+            <p>Carta 4</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/aristóteles.png" alt="Carta 4">
+            <p>Carta 4</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Buda.png" alt="Carta 4">
+            <p>Carta 5</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Cai Lun.png" alt="Carta 4">
+            <p>Carta 6</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/carlos magno.png" alt="Carta 4">
+            <p>Carta 7</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/CIROII_MATH.jpg" alt="Carta 4">
+            <p>Carta 8</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Cristovão Colombo.png" alt="Carta 4">
+            <p>Carta 9</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/william shakespeare.png" alt="Carta 4">
+            <p>Carta 10</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/da Vinci.png" alt="Carta 4">
+            <p>Carta 11</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Darwin_MATH (1).jpg" alt="Carta 4">
+            <p>Carta 12</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Galileu Galilei (1).png" alt="Carta 4">
+            <p>Carta 13</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/George Washington.png" alt="Carta 4">
+            <p>Carta 14</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/GraceHop_MATH.jpg" alt="Carta 4">
+            <p>Carta 15</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/gregor mendel.png" alt="Carta 4">
+            <p>Carta 16</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Heisenberg.png" alt="Carta 4">
+            <p>Carta 17</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Henry FOrd.png" alt="Carta 4">
+            <p>Carta 18</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Homero.png" alt="Carta 4">
+            <p>Carta 19</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Isaac Newton.png" alt="Carta 4">
+            <p>Carta 20</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Jhon dalton.png" alt="Carta 4">
+            <p>Carta 21</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Joseph Lister.png" alt="Carta 4">
+            <p>Carta 22</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Joseph Stalin.png" alt="Carta 4">
+            <p>Carta 23</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/João calvino.png" alt="Carta 4">
+            <p>Carta 24</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Júlio césar.jpg" alt="Carta 4">
+            <p>Carta 25</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Linus_Tor_MATH.jpg" alt="Carta 4">
+            <p>Carta 26</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/LOUIS daguerre.png" alt="Carta 4">
+            <p>Carta 27</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Machado de assis.png" alt="Carta 4">
+            <p>Carta 28</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/WhatsApp Image 2024-11-14 at 11.22.29.jpeg" alt="Carta 4">
+            <p>Carta 29</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Maomé (1).png" alt="Carta 4">
+            <p>Carta 30</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Margaret_MATH.jpg" alt="Carta 4">
+            <p>Carta 31</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Mark_MATH.jpg" alt="Carta 4">
+            <p>Carta 32</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/martin.png" alt="Carta 4">
+            <p>Carta 33</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Martinho Lutero.png" alt="Carta 4">
+            <p>Carta 34</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Menés.png" alt="Carta 4">
+            <p>Carta 35</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/michelangelo.png" alt="Carta 4">
+            <p>Carta 36</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/MJ.png" alt="Carta 4">
+            <p>Carta 27</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Moises_MATH.jpg" alt="Carta 4">
+            <p>Carta 38</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Napoleão Bonaparte.png" alt="Carta 4">
+            <p>Carta 39</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Paulo de Tarso.png" alt="Carta 4">
+            <p>Carta 40</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/PedroI_MATH.jpg" alt="Carta 4">
+            <p>Carta 41</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/pelé.png" alt="Carta 4">
+            <p>Carta 42</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/René Descartes.png" alt="Carta 4">
+            <p>Carta 43</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Ritchie_MATH.jpg" alt="Carta 4">
+            <p>Carta 44</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Tesla_MATH.jpg" alt="Carta 4">
+            <p>Carta 45</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Thomas Jefferson.png" alt="Carta 4">
+            <p>Carta 46</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Turing_MATH.jpg" alt="Carta 4">
+            <p>Carta 47</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/William Harvey.png" alt="Carta 4">
+            <p>Carta 48</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/WhatsApp Image 2024-11-14 at 11.22.29.jpeg" alt="Carta 4">
+            <p>Carta 49</p>
+        </div>
+
+        <div class="card">
+            <img src="Image/Zumbi dos Palmares.png" alt="Carta 4">
+            <p>Carta 50</p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #ffff00, #ffe143, #ffc771, #ffb897);
+}
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.welcome-message {
+    font-size: 20px;
+    color: #ff9800;
+    font-weight: bold;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Container das imagens e introdução */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 50px 20px;
+}
+
+/* Imagens laterais */
+.image-left, .image-right {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.image-left {
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image-right {
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Efeito ao passar o mouse */
+.image-left:hover {
+    transform: translate(-10px, -50%) rotate(-5deg);
+    filter: brightness(1.2);
+}
+
+.image-right:hover {
+    transform: translate(10px, -50%) rotate(5deg);
+    filter: brightness(1.2);
+}
+
+/* Introdução */
+.introduction {
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.introduction h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.introduction h2 {
+    font-size: 28px;
+    color: #ff9800;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.introduction ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.introduction ul li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+}
+
+.introduction ul li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff9800;
+    font-size: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .image-left, .image-right {
+        display: none;
+    }
+
+    .introduction {
+        padding: 15px;
+    }
+
+    .introduction h1 {
+        font-size: 28px;
+    }
+
+    .introduction h2 {
+        font-size: 24px;
+    }
+}
